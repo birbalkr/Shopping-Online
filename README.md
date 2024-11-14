@@ -178,6 +178,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or feedback, feel free to reach out:
 
-- **Birbal Kumar**: [birbalkr1435@gmail.com](mailto:your-email@example.com)
-- **Parbhakar Kumar**: [parbhakar@example.com](mailto:parbhakar@example.com)
+- **Birbal Kumar**: [birbalkr1435@gmail.com](mailto:birbalkr1435@gmail.com)
+- **Parbhakar Kumar**: [prabhakarpandey7061@gmail.com](mailto:prabhakarpandey7061@gmail.com)
 
