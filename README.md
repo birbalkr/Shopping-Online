@@ -57,6 +57,7 @@ Before you start, ensure you have the following installed on your system:
     ```bash
     cd Shopping
     npm install or npm i
+    npm i @material-tailwind/react
     ```
 
 3. Start the development server:
