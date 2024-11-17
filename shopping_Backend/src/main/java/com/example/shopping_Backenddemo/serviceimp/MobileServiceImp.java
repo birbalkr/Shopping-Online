@@ -5,40 +5,42 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.shopping_Backenddemo.MobileItem;
-import com.example.shopping_Backenddemo.entity.ProductBooksEntity;
-import com.example.shopping_Backenddemo.repository.BookRepository;
+import com.example.shopping_Backenddemo.entity.ProductMobilesEntity;
+import com.example.shopping_Backenddemo.repository.MobileRepository;
 import com.example.shopping_Backenddemo.service.MobileSerivce;
 
+@Service
 public class MobileServiceImp implements MobileSerivce{
     
     @Autowired
-    private BookRepository bookRepository;
+    private MobileRepository mobileRepository;
 
     @Override
-    public String createBook(MobileItem mobileItem) {
-        ProductBooksEntity productBooksEntity = new ProductBooksEntity();
-        BeanUtils.copyProperties(mobileItem, productBooksEntity);
+    public String createMobile(MobileItem mobileItem) {
+        ProductMobilesEntity productMobilesEntity = new ProductMobilesEntity();
+        BeanUtils.copyProperties(mobileItem, productMobilesEntity);
 
-        bookRepository.save(productBooksEntity);
+        mobileRepository.save(productMobilesEntity);
         return "Saved";
     }
 
     @Override
-    public List<MobileItem> readBooks() {
-        List<ProductBooksEntity> bookList = bookRepository.findAll();
+    public List<MobileItem> readMobiles() {
+        List<ProductMobilesEntity> bookList = mobileRepository.findAll();
         List<MobileItem> mobileItem = new ArrayList<>();
 
-        for (ProductBooksEntity productBooksEntity : bookList) {
+        for (ProductMobilesEntity productMobilesEntity : bookList) {
 
             MobileItem emp = new MobileItem();
-            emp.setTitle(productBooksEntity.getTitle());
-            emp.setDescription(productBooksEntity.getDescription());
-            emp.setId(productBooksEntity.getId());
-            emp.setPrice(productBooksEntity.getPrice());
-            emp.setImage(productBooksEntity.getImage());
-            emp.setReviews(productBooksEntity.getReviews());
+            emp.setTitle(productMobilesEntity.getTitle());
+            emp.setDescription(productMobilesEntity.getDescription());
+            emp.setId(productMobilesEntity.getId());
+            emp.setPrice(productMobilesEntity.getPrice());
+            emp.setImage(productMobilesEntity.getImage());
+            emp.setReviews(productMobilesEntity.getReviews());
 
             mobileItem.add(emp);
         }
@@ -46,29 +48,29 @@ public class MobileServiceImp implements MobileSerivce{
     }
 
     @Override
-    public boolean deleteBook(Long id) {
-        ProductBooksEntity emp = bookRepository.findById(id).get();
-        bookRepository.delete(emp);
+    public boolean deleteMobile(Long id) {
+        ProductMobilesEntity emp = mobileRepository.findById(id).get();
+        mobileRepository.delete(emp);
         return true;
     }
 
     @Override
-    public String updateBook(Long id, MobileItem mobileItem) {
-        ProductBooksEntity exestingBookItem = bookRepository.findById(id).get();
+    public String updateMobile(Long id, MobileItem mobileItem) {
+        ProductMobilesEntity exestingBookItem = mobileRepository.findById(id).get();
         exestingBookItem.setTitle(mobileItem.getTitle());
         exestingBookItem.setDescription(mobileItem.getDescription());
         exestingBookItem.setPrice(mobileItem.getPrice());
         exestingBookItem.setImage(mobileItem.getImage());
         exestingBookItem.setReviews(mobileItem.getReviews());
-        bookRepository.save(exestingBookItem);
+        mobileRepository.save(exestingBookItem);
         return "Update Succesfully";
     }
 
     @Override
-    public MobileItem readBook(Long id) {
-        ProductBooksEntity productBooksEntity = bookRepository.findById(id).get();
+    public MobileItem readMobile(Long id) {
+        ProductMobilesEntity productMobilesEntity = mobileRepository.findById(id).get();
         MobileItem mobileItem = new MobileItem();
-        BeanUtils.copyProperties(productBooksEntity, mobileItem);
+        BeanUtils.copyProperties(productMobilesEntity, mobileItem);
 
         return mobileItem;
     }
