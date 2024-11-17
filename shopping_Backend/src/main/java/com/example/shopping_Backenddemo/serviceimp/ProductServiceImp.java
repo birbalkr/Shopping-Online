@@ -1,4 +1,4 @@
-package com.example.shopping_Backenddemo.service;
+package com.example.shopping_Backenddemo.serviceimp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.example.shopping_Backenddemo.ProductItem;
 import com.example.shopping_Backenddemo.entity.ProductEntity;
 import com.example.shopping_Backenddemo.repository.ProductRepository;
+import com.example.shopping_Backenddemo.service.ProductService;
 
 
 @Service
