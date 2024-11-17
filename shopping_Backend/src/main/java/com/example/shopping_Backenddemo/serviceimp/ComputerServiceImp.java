@@ -6,10 +6,7 @@ import java.util.List;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.shopping_Backenddemo.BookItem;
 import com.example.shopping_Backenddemo.ComputerItem;
-import com.example.shopping_Backenddemo.MobileItem;
-import com.example.shopping_Backenddemo.entity.ProductBooksEntity;
 import com.example.shopping_Backenddemo.entity.ProductComputerEntity;
 import com.example.shopping_Backenddemo.repository.ComputerRepository;
 import com.example.shopping_Backenddemo.service.ComputerSerivce;
