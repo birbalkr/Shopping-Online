@@ -16,7 +16,7 @@ import com.example.shopping_Backenddemo.service.ElectronicSerivce;
 
 @RestController
 public class ElectronicController {
-    
+
     @Autowired
     ElectronicSerivce electronicSerivce;
 
@@ -36,7 +36,7 @@ public class ElectronicController {
 
     }
 
-    @DeleteMapping("api/carMotorbike/{id}")
+    @DeleteMapping("api/electronic/{id}")
     public String deleteElectronic(@PathVariable Long id) {
         if (electronicSerivce.deleteElectronic(id))
             return "Delete Successfully";

@@ -16,6 +16,7 @@ import com.example.shopping_Backenddemo.service.MobileSerivce;
 
 @RestController
 public class mobileController {
+    
     @Autowired
     MobileSerivce mobileSerivce;
 

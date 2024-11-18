@@ -17,10 +17,9 @@ import com.example.shopping_Backenddemo.service.BookSerivce;
 @RestController
 public class BookController {
 
-
     @Autowired
     BookSerivce bookSerivce;
-   
+
     @GetMapping("api/book")
     public List<BookItem> getALLBook() {
         return bookSerivce.readBooks();
@@ -36,7 +35,7 @@ public class BookController {
         return bookSerivce.createBook(bookItem);
 
     }
-    
+
     @DeleteMapping("api/book/{id}")
     public String deleteBook(@PathVariable Long id) {
         if (bookSerivce.deleteBook(id))

@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.shopping_Backenddemo.ProductItem;
 import com.example.shopping_Backenddemo.service.ProductService;
 
+
 @RestController
 public class ProductController {
 
     @Autowired
     ProductService productService;
-
 
     @GetMapping("api/product")
     public List<ProductItem> getALLProduct() {
@@ -50,5 +50,6 @@ public class ProductController {
         return productService.updateProduct(id, productItem);
     }
 
- 
+    
+
 }

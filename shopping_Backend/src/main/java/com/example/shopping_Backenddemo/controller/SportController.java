@@ -16,11 +16,11 @@ import com.example.shopping_Backenddemo.service.SportSerivce;
 
 @RestController
 public class SportController {
-    
+
     @Autowired
     SportSerivce sportSerivce;
 
-        @GetMapping("api/sport")
+    @GetMapping("api/sport")
     public List<SportsItem> getALLSports() {
         return sportSerivce.readSports();
     }
@@ -47,8 +47,4 @@ public class SportController {
     public String updateSport(@PathVariable Long id, @RequestBody SportsItem sportsItem) {
         return sportSerivce.updateSport(id, sportsItem);
     }
-
-
-    
-
 }

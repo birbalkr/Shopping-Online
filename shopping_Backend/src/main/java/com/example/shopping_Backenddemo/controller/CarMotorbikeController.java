@@ -16,7 +16,7 @@ import com.example.shopping_Backenddemo.service.CarMotorbikeSerivce;
 
 @RestController
 public class CarMotorbikeController {
-    
+
     @Autowired
     CarMotorbikeSerivce carMotorbikeSerivce;
 

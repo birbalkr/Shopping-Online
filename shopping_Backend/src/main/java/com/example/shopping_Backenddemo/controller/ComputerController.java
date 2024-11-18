@@ -16,7 +16,7 @@ import com.example.shopping_Backenddemo.service.ComputerSerivce;
 
 @RestController
 public class ComputerController {
-    
+
     @Autowired
     ComputerSerivce computerSerivce;
 
