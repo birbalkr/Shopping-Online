@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ComputerItem {
+    
     private Long id;
     private String title;
     private String description;

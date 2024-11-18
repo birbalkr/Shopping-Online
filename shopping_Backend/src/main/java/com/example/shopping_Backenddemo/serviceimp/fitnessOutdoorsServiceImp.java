@@ -28,7 +28,7 @@ public class fitnessOutdoorsServiceImp implements FitnessOutdoorSerivce{
     }
 
     @Override
-    public List<FitnessOutdoorItem> readFitness() {
+    public List<FitnessOutdoorItem> readFitnesss() {
         List<ProductFitnessOutdoors> bookList = fitnesslRepository.findAll();
         List<FitnessOutdoorItem> fitnessOutdoorItem = new ArrayList<>();
 
@@ -48,7 +48,7 @@ public class fitnessOutdoorsServiceImp implements FitnessOutdoorSerivce{
     }
 
     @Override
-    public boolean deleteFitnesss(Long id) {
+    public boolean deleteFitness(Long id) {
         ProductFitnessOutdoors emp = fitnesslRepository.findById(id).get();
         fitnesslRepository.delete(emp);
         return true;

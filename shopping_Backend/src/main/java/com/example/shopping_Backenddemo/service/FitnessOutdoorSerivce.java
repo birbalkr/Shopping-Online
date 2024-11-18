@@ -7,9 +7,9 @@ import com.example.shopping_Backenddemo.FitnessOutdoorItem;
 public interface FitnessOutdoorSerivce {
     String createFitness(FitnessOutdoorItem fitnessOutdoorItem); 
 
-    List<FitnessOutdoorItem> readFitness();
+    List<FitnessOutdoorItem> readFitnesss();
 
-    boolean deleteFitnesss(Long id);
+    boolean deleteFitness(Long id);
 
     String updateFitness(Long id, FitnessOutdoorItem fitnessOutdoorItem);
 

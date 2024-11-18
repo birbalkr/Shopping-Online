@@ -10,10 +10,10 @@ import lombok.NoArgsConstructor;
 public class MobileItem {
 
     private Long id;
-   private String title;
-   private String description;
-   private String price; 
-   private String image;
+    private String title;
+    private String description;
+    private String price;
+    private String image;
     private String reviews;
 
 }

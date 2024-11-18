@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BookItem {
-   
-   private Long id;
-   private String title;
-   private String description;
-   private String price; 
-   private String image;
+
+    private Long id;
+    private String title;
+    private String description;
+    private String price;
+    private String image;
     private String reviews;
 }

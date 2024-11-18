@@ -8,9 +8,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProductItem {
-   
-   private Long id;
-   private String title;
-   private String description;
-   private String price; 
+
+    private Long id;
+    private String title;
+    private String description;
+    private String price;
+    private String image;
+    private String reviews;
 }
+
