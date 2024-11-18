@@ -1,4 +1,4 @@
-// /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 
 // export default {
   import withMT from "@material-tailwind/react/utils/withMT";

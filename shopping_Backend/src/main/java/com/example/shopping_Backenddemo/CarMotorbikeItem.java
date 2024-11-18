@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductItem {
-
+public class CarMotorbikeItem {
+    
     private Long id;
     private String title;
     private String description;
@@ -16,4 +16,3 @@ public class ProductItem {
     private String image;
     private String reviews;
 }
-

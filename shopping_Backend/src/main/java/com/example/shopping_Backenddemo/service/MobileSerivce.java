@@ -6,13 +6,13 @@ import com.example.shopping_Backenddemo.MobileItem;
 
 public interface MobileSerivce {
 
-    String createBook(MobileItem mobileItem); 
+    String createMobile(MobileItem mobileItem); 
 
-    List<MobileItem> readBooks();
+    List<MobileItem> readMobiles();
 
-    boolean deleteBook(Long id);
+    boolean deleteMobile(Long id);
 
-    String updateBook(Long id, MobileItem mobileItem);
+    String updateMobile(Long id, MobileItem mobileItem);
 
-    MobileItem readBook(Long id);
+    MobileItem readMobile(Long id);
 }

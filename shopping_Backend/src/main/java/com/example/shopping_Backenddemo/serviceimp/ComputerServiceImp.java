@@ -5,12 +5,15 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.shopping_Backenddemo.ComputerItem;
 import com.example.shopping_Backenddemo.entity.ProductComputerEntity;
 import com.example.shopping_Backenddemo.repository.ComputerRepository;
 import com.example.shopping_Backenddemo.service.ComputerSerivce;
 
+
+@Service
 public class ComputerServiceImp implements ComputerSerivce{
 
 
