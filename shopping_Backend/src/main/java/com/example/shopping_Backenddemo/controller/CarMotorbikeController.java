@@ -30,7 +30,7 @@ public class CarMotorbikeController {
         return carMotorbikeSerivce.readCarMotorbike(id);
     }
 
-    @PostMapping("api/carMotorbike")
+    @PostMapping("add-carMotorbike-api")
     public String createCarMotorbike(@RequestBody CarMotorbikeItem carMotorbikeItem) {
         return carMotorbikeSerivce.createCarMotorbike(carMotorbikeItem);
 
@@ -43,7 +43,7 @@ public class CarMotorbikeController {
         return "Not found";
     }
 
-    @PutMapping("api/carMotorbike/{id}")
+    @PutMapping("add-carMotorbike-api/{id}")
     public String updateCarMotorbike(@PathVariable Long id, @RequestBody CarMotorbikeItem carMotorbikeItem) {
         return carMotorbikeSerivce.updateCarMotorbike(id, carMotorbikeItem);
     }

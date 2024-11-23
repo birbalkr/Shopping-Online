@@ -30,7 +30,7 @@ public class HomeKitchenController {
         return homeKitchenSerivce.readHome(id);
     }
 
-    @PostMapping("api/homekitchen")
+    @PostMapping("add-homekitchen-api")
     public String createHome(@RequestBody HomeKitchenItem homeKitchenItem) {
         return homeKitchenSerivce.createHome(homeKitchenItem);
 
@@ -43,7 +43,7 @@ public class HomeKitchenController {
         return "Not found";
     }
 
-    @PutMapping("api/homekitchen/{id}")
+    @PutMapping("add-homekitchen-api/{id}")
     public String updateHome(@PathVariable Long id, @RequestBody HomeKitchenItem homeKitchenItem) {
         return homeKitchenSerivce.updateHome(id, homeKitchenItem);
     }

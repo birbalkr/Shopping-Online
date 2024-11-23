@@ -31,7 +31,7 @@ public class mobileController {
         return mobileSerivce.readMobile(id);
     }
 
-    @PostMapping("api/mobile")
+    @PostMapping("add-mobile-api")
     public String createMobile(@RequestBody MobileItem mobileItem) {
         return mobileSerivce.createMobile(mobileItem);
 
@@ -44,7 +44,7 @@ public class mobileController {
         return "Not found";
     }
 
-    @PutMapping("api/mobile/{id}")
+    @PutMapping("add-mobile-api/{id}")
     public String updateMobile(@PathVariable Long id, @RequestBody MobileItem mobileItem) {
         return mobileSerivce.updateMobile(id, mobileItem);
     }
