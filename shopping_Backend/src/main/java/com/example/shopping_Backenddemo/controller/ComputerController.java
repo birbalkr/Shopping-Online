@@ -30,7 +30,7 @@ public class ComputerController {
         return computerSerivce.readComputer(id);
     }
 
-    @PostMapping("api/computer")
+    @PostMapping("add-computer-api")
     public String createComputer(@RequestBody ComputerItem computerItem) {
         return computerSerivce.createComputer(computerItem);
 
@@ -43,7 +43,7 @@ public class ComputerController {
         return "Not found";
     }
 
-    @PutMapping("api/computer/{id}")
+    @PutMapping("add-computer-api/{id}")
     public String updateComputer(@PathVariable Long id, @RequestBody ComputerItem computerItem) {
         return computerSerivce.updateComputer(id, computerItem);
     }

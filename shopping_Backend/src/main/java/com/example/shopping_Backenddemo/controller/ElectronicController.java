@@ -30,7 +30,7 @@ public class ElectronicController {
         return electronicSerivce.readElectronic(id);
     }
 
-    @PostMapping("api/electronic")
+    @PostMapping("add-electronic-api")
     public String createElectronic(@RequestBody ElectronicItem electronicItem) {
         return electronicSerivce.createElectronic(electronicItem);
 
@@ -43,7 +43,7 @@ public class ElectronicController {
         return "Not found";
     }
 
-    @PutMapping("api/electronic/{id}")
+    @PutMapping("add-electronic-api/{id}")
     public String updateElectronic(@PathVariable Long id, @RequestBody ElectronicItem electronicItem) {
         return electronicSerivce.updateElectronic(id, electronicItem);
     }

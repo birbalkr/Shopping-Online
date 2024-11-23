@@ -32,7 +32,7 @@ public class ProductController {
         return productService.readProduct(id);
     }
 
-    @PostMapping("api/product")
+    @PostMapping("add-product-api")
     public String createProduct(@RequestBody ProductItem productItem) {
         return productService.createProduct(productItem);
 
@@ -45,7 +45,7 @@ public class ProductController {
         return "Not found";
     }
 
-    @PutMapping("api/product/{id}")
+    @PutMapping("add-product-api/{id}")
     public String updateProduct(@PathVariable Long id, @RequestBody ProductItem productItem) {
         return productService.updateProduct(id, productItem);
     }

@@ -30,7 +30,7 @@ public class SellController {
         return sellService.readSell(id);
     }
 
-    @PostMapping("api/sell")
+    @PostMapping("add-sell-api")
     public String createSell(@RequestBody SellItem sellItem) {
         return sellService.createSell(sellItem);
 
@@ -43,7 +43,7 @@ public class SellController {
         return "Not found";
     }
 
-    @PutMapping("api/sell/{id}")
+    @PutMapping("add-sell-api/{id}")
     public String updateSell(@PathVariable Long id, @RequestBody SellItem sellItem) {
         return sellService.updateSell(id, sellItem);
     }

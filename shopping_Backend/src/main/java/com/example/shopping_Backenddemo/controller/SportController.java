@@ -30,7 +30,7 @@ public class SportController {
         return sportSerivce.readSport(id);
     }
 
-    @PostMapping("api/sport")
+    @PostMapping("add-sport-api")
     public String createSport(@RequestBody SportsItem sellItem) {
         return sportSerivce.createSport(sellItem);
 
@@ -43,7 +43,7 @@ public class SportController {
         return "Not found";
     }
 
-    @PutMapping("api/sport/{id}")
+    @PutMapping("add-sport-api/{id}")
     public String updateSport(@PathVariable Long id, @RequestBody SportsItem sportsItem) {
         return sportSerivce.updateSport(id, sportsItem);
     }

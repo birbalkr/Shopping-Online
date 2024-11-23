@@ -30,7 +30,7 @@ public class FashionController {
         return fashionSerivce.readFashion(id);
     }
 
-    @PostMapping("api/fashion")
+    @PostMapping("add-fashion-api")
     public String createFashion(@RequestBody FashionItem fashionItem) {
         return fashionSerivce.createFashion(fashionItem);
 
@@ -43,7 +43,7 @@ public class FashionController {
         return "Not found";
     }
 
-    @PutMapping("api/fashion/{id}")
+    @PutMapping("add-fashion-api/{id}")
     public String updateFashion(@PathVariable Long id, @RequestBody FashionItem fashionItem) {
         return fashionSerivce.updateFashion(id, fashionItem);
     }

@@ -30,7 +30,7 @@ public class BookController {
         return bookSerivce.readBook(id);
     }
 
-    @PostMapping("api/book")
+    @PostMapping("add-book-api")
     public String createBook(@RequestBody BookItem bookItem) {
         return bookSerivce.createBook(bookItem);
 
@@ -43,7 +43,7 @@ public class BookController {
         return "Not found";
     }
 
-    @PutMapping("api/book/{id}")
+    @PutMapping("add-book-api{id}")
     public String updateBook(@PathVariable Long id, @RequestBody BookItem bookItem) {
         return bookSerivce.updateBook(id, bookItem);
     }
