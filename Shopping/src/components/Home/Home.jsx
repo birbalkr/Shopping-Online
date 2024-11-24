@@ -1,7 +1,8 @@
 import React from 'react'
-
-const Home = () => {
+import { Link } from 'react-router-dom'
+function Home() {
   return (
+<<<<<<< HEAD
     <>
       <div className="bg-white py-6 sm:py-8 lg:py-12">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -38,6 +39,11 @@ const Home = () => {
           </div>
         </div>
       </div></>
+=======
+    <div className='bg-black text-white '>
+      home 
+    </div>
+>>>>>>> b8c1b14 (add routing)
   )
 }
 
