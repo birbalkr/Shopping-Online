@@ -14,6 +14,9 @@ export function Drawer() {
         >
           <img src="/src/assets/images/menu.png" className="w-5" alt="" />
         </a>
+        <marquee behavior="alternate" bgcolor='red' direction="">
+          This Is Shopping App Created by Birbal Kumar And Parbhakar Kumar
+        </marquee>
         <div
           className=" bg-blue-gray-700 offcanvas offcanvas-start"
           tabIndex="-1"
@@ -39,29 +42,83 @@ export function Drawer() {
 
             <ul className="mt-14">
               <li className="my-2 mt-2 hover:bg-gray-500 text-2xl cursor-pointer">
-                <Link className="flex flex-wrap p-6 hover:text-4xl" to="books"> <img className="w-10 mr-7" src="/src/assets/images/book.png" alt="" /> Books</Link>
+                <Link className="flex flex-wrap p-6 hover:text-4xl" to="books">
+                  {" "}
+                  <img
+                    className="w-10 mr-7"
+                    src="/src/assets/images/book.png"
+                    alt=""
+                  />{" "}
+                  Books
+                </Link>
               </li>
 
               <li className="my-2 mt-2 hover:bg-gray-500  text-xl cursor-pointer ">
-                <Link className="flex flex-wrap p-6 hover:text-4xl" to="/computar"><img className="w-10 mr-7" src="/src/assets/images/computer.png" alt="" />Computer</Link>
+                <Link
+                  className="flex flex-wrap p-6 hover:text-4xl"
+                  to="/computar"
+                >
+                  <img
+                    className="w-10 mr-7"
+                    src="/src/assets/images/computer.png"
+                    alt=""
+                  />
+                  Computer
+                </Link>
               </li>
 
               <li className="my-2 mt-2 hover:bg-gray-500 text-xl cursor-pointer">
-                <Link className="flex flex-wrap p-6 hover:text-4xl" to ="/modile"><img className="w-10 mr-7" src="/src/assets/images/phone.png" alt="" />Mobile</Link>
+                <Link
+                  className="flex flex-wrap p-6 hover:text-4xl"
+                  to="/modile"
+                >
+                  <img
+                    className="w-10 mr-7"
+                    src="/src/assets/images/phone.png"
+                    alt=""
+                  />
+                  Mobile
+                </Link>
               </li>
 
               <li className="my-2 mt-2 hover:bg-gray-500 text-xl cursor-pointerr">
-                <Link className="flex flex-wrap p-6 hover:text-4xl" to='/homekitchan'><img className="w-10 mr-7" src="/src/assets/images/kitchen.png" alt="" />Home&Kitchen</Link>
+                <Link
+                  className="flex flex-wrap p-6 hover:text-4xl"
+                  to="/homekitchan"
+                >
+                  <img
+                    className="w-10 mr-7"
+                    src="/src/assets/images/kitchen.png"
+                    alt=""
+                  />
+                  Home&Kitchen
+                </Link>
               </li>
 
               <li className="my-2 mt-2 hover:bg-gray-500  text-xl cursor-pointer">
-                <Link className="flex flex-wrap p-6 hover:text-4xl" to ="/Sport"><img className="w-10 mr-7" src="/src/assets/images/sport.png" alt="" />Sport</Link>
+                <Link className="flex flex-wrap p-6 hover:text-4xl" to="/Sport">
+                  <img
+                    className="w-10 mr-7"
+                    src="/src/assets/images/sport.png"
+                    alt=""
+                  />
+                  Sport
+                </Link>
               </li>
 
               <li className="my-2 mt-2 hover:bg-gray-500  text-xl cursor-pointer">
-                <Link className="flex flex-wrap p-6 hover:text-4xl" to="/fashion"><img className="w-10 mr-7" src="/src/assets/images/fashion.png" alt="" />Fashion</Link>
+                <Link
+                  className="flex flex-wrap p-6 hover:text-4xl"
+                  to="/fashion"
+                >
+                  <img
+                    className="w-10 mr-7"
+                    src="/src/assets/images/fashion.png"
+                    alt=""
+                  />
+                  Fashion
+                </Link>
               </li>
-
             </ul>
           </div>
         </div>
