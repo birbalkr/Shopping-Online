@@ -11,3 +11,6 @@
 .img{
     height: 25vh;
 }
+.logo{
+    mix-blend-mode:color-burn 
+}
