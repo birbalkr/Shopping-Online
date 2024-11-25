@@ -17,7 +17,7 @@ function Header() {
                     <nav className="hidden gap-12 lg:flex">
                         <Link to="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 border-double p-1.5 border-2 border-black"><input className='searchbox' placeholder='Search'/><i class="fa-solid fa-magnifying-glass"></i></Link>
 
-                        <Link to="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 mt-3"><i class="fa-solid fa-cart-shopping"></i></Link>
+                        <Link to="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 "><img className='w-12' src="/src/assets/images/cart.png" alt="" /></Link>
                     </nav>
 
                     <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">

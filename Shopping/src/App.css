@@ -18,3 +18,9 @@
     outline: none;
     padding: 4px;
 }
+marquee{
+    margin-top: 4px;
+    color: red;
+    font-size: 22px;
+    font-weight: 700;
+}

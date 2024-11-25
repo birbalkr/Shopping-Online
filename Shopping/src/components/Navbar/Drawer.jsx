@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 export function Drawer() {
   return (
     <>
-      <div>
+     <div className="flex ml-12">
+     <div>
         <a
           className="btn mt-1"
           data-bs-toggle="offcanvas"
@@ -14,9 +15,7 @@ export function Drawer() {
         >
           <img src="/src/assets/images/menu.png" className="w-5" alt="" />
         </a>
-        <marquee behavior="alternate" bgcolor='red' direction="">
-          This Is Shopping App Created by Birbal Kumar And Parbhakar Kumar
-        </marquee>
+        
         <div
           className=" bg-blue-gray-700 offcanvas offcanvas-start"
           tabIndex="-1"
@@ -123,6 +122,11 @@ export function Drawer() {
           </div>
         </div>
       </div>
+
+      <marquee behavior="alternate">
+          This Is Shopping App Created by Birbal Kumar And Parbhakar Kumar
+        </marquee>
+     </div>
     </>
   );
 }
