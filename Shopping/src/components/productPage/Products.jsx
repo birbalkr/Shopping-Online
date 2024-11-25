@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Motorbike() {
+function Products() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Motorbike() {
   )
 }
 
-export default Motorbike
+export default Products
