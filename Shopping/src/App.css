@@ -14,3 +14,7 @@
 .logo{
     mix-blend-mode:color-burn 
 }
+.searchbox{
+    outline: none;
+    padding: 4px;
+}

@@ -15,16 +15,9 @@ function Header() {
                         Online-App
                     </Link>
                     <nav className="hidden gap-12 lg:flex">
-                        <Link to="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Home</Link>
-                        <Link to="#" className="inline-flex items-center gap-1 text-lg font-semibold text-indigo-500">
-                            Features
+                        <Link to="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 border-double p-1.5 border-2 border-black"><input className='searchbox' placeholder='Search'/><i class="fa-solid fa-magnifying-glass"></i></Link>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                            </svg>
-                        </Link>
-                        <Link to="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Pricing</Link>
-                        <Link to="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"><i class="fa-solid fa-cart-shopping"></i></Link>
+                        <Link to="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700 mt-3"><i class="fa-solid fa-cart-shopping"></i></Link>
                     </nav>
 
                     <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
