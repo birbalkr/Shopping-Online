@@ -17,6 +17,7 @@ public class ProductBooksEntity {
 
     private String title;
     private String description;
+    private String author;
     private String price;
     private String image;
     private String reviews;
