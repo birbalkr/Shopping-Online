@@ -39,7 +39,10 @@ public class BookServiceImp implements BookSerivce {
             emp.setDescription(productBooksEntity.getDescription());
             emp.setId(productBooksEntity.getId());
             emp.setPrice(productBooksEntity.getPrice());
-            emp.setImage(productBooksEntity.getImage());
+            emp.setImage1(productBooksEntity.getImage1());
+            emp.setImage2(productBooksEntity.getImage2());
+            emp.setImage3(productBooksEntity.getImage3());
+            emp.setAuthor(productBooksEntity.getAuthor());
             emp.setReviews(productBooksEntity.getReviews());
 
             bookItem.add(emp);
@@ -60,7 +63,10 @@ public class BookServiceImp implements BookSerivce {
         exestingBookItem.setTitle(bookItem.getTitle());
         exestingBookItem.setDescription(bookItem.getDescription());
         exestingBookItem.setPrice(bookItem.getPrice());
-        exestingBookItem.setImage(bookItem.getImage());
+        exestingBookItem.setImage1(bookItem.getImage1());
+        exestingBookItem.setImage2(bookItem.getImage2());
+        exestingBookItem.setImage3(bookItem.getImage3());
+        exestingBookItem.setAuthor(bookItem.getAuthor());
         exestingBookItem.setReviews(bookItem.getReviews());
         bookRepository.save(exestingBookItem);
         return "Update Succesfully";

@@ -38,7 +38,11 @@ public class ElectronicServiceImp implements ElectronicSerivce {
             emp.setDescription(productElectronicEntity.getDescription());
             emp.setId(productElectronicEntity.getId());
             emp.setPrice(productElectronicEntity.getPrice());
-            emp.setImage(productElectronicEntity.getImage());
+            emp.setImage1(productElectronicEntity.getImage1());
+            emp.setImage2(productElectronicEntity.getImage2());
+            emp.setImage3(productElectronicEntity.getImage3());
+            emp.setBrand(productElectronicEntity.getBrand());
+            emp.setColor(productElectronicEntity.getColor());
             emp.setReviews(productElectronicEntity.getReviews());
 
             electronicItems.add(emp);
@@ -59,7 +63,11 @@ public class ElectronicServiceImp implements ElectronicSerivce {
         exestingElectronicItem.setTitle(electronicItem.getTitle());
         exestingElectronicItem.setDescription(electronicItem.getDescription());
         exestingElectronicItem.setPrice(electronicItem.getPrice());
-        exestingElectronicItem.setImage(electronicItem.getImage());
+        exestingElectronicItem.setImage1(electronicItem.getImage1());
+        exestingElectronicItem.setImage2(electronicItem.getImage2());
+        exestingElectronicItem.setImage3(electronicItem.getImage3());
+        exestingElectronicItem.setBrand(electronicItem.getBrand());
+        exestingElectronicItem.setColor(electronicItem.getColor());
         exestingElectronicItem.setReviews(electronicItem.getReviews());
         electronicRepository.save(exestingElectronicItem);
         return "Update Succesfully";

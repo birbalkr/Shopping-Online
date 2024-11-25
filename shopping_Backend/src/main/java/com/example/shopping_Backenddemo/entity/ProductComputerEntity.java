@@ -19,6 +19,11 @@ public class ProductComputerEntity {
     private String title;
     private String description;
     private String price;
-    private String image;
+    private String image1;
+    private String image2;
+    private String image3;
+    private String operation;
+    private String cpumodel;
+    private String memorystorage;
     private String reviews;
 }
