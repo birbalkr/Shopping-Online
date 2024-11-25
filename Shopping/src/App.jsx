@@ -1,23 +1,25 @@
 
 import './App.css'
 
-import Drawer from './components/Navbar/Drawer'
-import Navbar from './components/Navbar/Navbar'
 
 import Header from './components/Header/Header'
-import Home from './components/Home/Home'
 import Footer from './components/Footer /Footer'
+import Drawer from './components/Navbar/Drawer'
+import Products from './components/Products data/products_data'
+import { Outlet } from 'react-router-dom'
 
 
-function App() { 
-  
+function App() {
+
 
   return (
     <>
-
-     <Header/>
-     <Home/>
-     <Footer/>
+      <Header />
+      <hr />
+      <Drawer />
+      <Products />
+      <Outlet />
+      <Footer />
 
     </>
 
