@@ -11,9 +11,7 @@
 .img{
     height: 25vh;
 }
-.logo{
-    mix-blend-mode:color-burn 
-}
+
 .searchbox{
     outline: none;
     padding: 4px;
@@ -23,4 +21,32 @@ marquee{
     color: red;
     font-size: 22px;
     font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .menuitem {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .liItem {
+        display: none;
+    }
+}
+@media screen and (min-width: 789px) and (max-width:1023px) {
+    .tabletitem {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width:1440px) {
+    .laptop {
+        display: none;
+    }
+}
+@media screen and (min-width:1440px) and (max-width:1440px) {
+    .laptop {
+        display: block;
+    }
 }
