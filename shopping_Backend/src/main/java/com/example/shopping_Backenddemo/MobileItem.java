@@ -13,7 +13,13 @@ public class MobileItem {
     private String title;
     private String description;
     private String price;
-    private String image;
+    private String image1;
+    private String image2;
+    private String image3;
     private String reviews;
-
+    private String brand;
+    private String opreatingSystem;
+    private String ram;
+    private String cupModel;
+    private String cupSpeed;
 }

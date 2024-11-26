@@ -13,6 +13,10 @@ public class HomeKitchenItem {
     private String title;
     private String description;
     private String price;
-    private String image;
+    private String image1;
+    private String image2;
+    private String image3;
+    private String brand;
+    private String netQuantity;
     private String reviews;
 }

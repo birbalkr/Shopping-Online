@@ -39,7 +39,11 @@ public class HomeKitchenServiceImp implements HomeKitchenSerivce {
             emp.setDescription(productHomeKitchenEntity.getDescription());
             emp.setId(productHomeKitchenEntity.getId());
             emp.setPrice(productHomeKitchenEntity.getPrice());
-            emp.setImage(productHomeKitchenEntity.getImage());
+            emp.setImage1(productHomeKitchenEntity.getImage1());
+            emp.setImage2(productHomeKitchenEntity.getImage2());
+            emp.setImage3(productHomeKitchenEntity.getImage3());
+            emp.setBrand(productHomeKitchenEntity.getBrand());
+            emp.setNetQuantity(productHomeKitchenEntity.getNetQuantity());
             emp.setReviews(productHomeKitchenEntity.getReviews());
 
             homeKitchenItem.add(emp);
@@ -56,13 +60,17 @@ public class HomeKitchenServiceImp implements HomeKitchenSerivce {
 
     @Override
     public String updateHome(Long id, HomeKitchenItem homeKitchenItem) {
-        ProductHomeKitchenEntity exestingBookItem = homekitchenRepository.findById(id).get();
-        exestingBookItem.setTitle(homeKitchenItem.getTitle());
-        exestingBookItem.setDescription(homeKitchenItem.getDescription());
-        exestingBookItem.setPrice(homeKitchenItem.getPrice());
-        exestingBookItem.setImage(homeKitchenItem.getImage());
-        exestingBookItem.setReviews(homeKitchenItem.getReviews());
-        homekitchenRepository.save(exestingBookItem);
+        ProductHomeKitchenEntity exestinghomekitchen = homekitchenRepository.findById(id).get();
+        exestinghomekitchen.setTitle(homeKitchenItem.getTitle());
+        exestinghomekitchen.setDescription(homeKitchenItem.getDescription());
+        exestinghomekitchen.setPrice(homeKitchenItem.getPrice());
+        exestinghomekitchen.setImage1(homeKitchenItem.getImage1());
+        exestinghomekitchen.setImage2(homeKitchenItem.getImage2());
+        exestinghomekitchen.setImage3(homeKitchenItem.getImage3());
+        exestinghomekitchen.setBrand(homeKitchenItem.getBrand());
+        exestinghomekitchen.setNetQuantity(homeKitchenItem.getNetQuantity());
+        exestinghomekitchen.setReviews(homeKitchenItem.getReviews());
+        homekitchenRepository.save(exestinghomekitchen);
         return "Update Succesfully";
     }
 

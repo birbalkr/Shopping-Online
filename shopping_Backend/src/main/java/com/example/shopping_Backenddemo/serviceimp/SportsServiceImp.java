@@ -40,7 +40,12 @@ public class SportsServiceImp implements SportSerivce{
             emp.setDescription(productSportsEntity.getDescription());
             emp.setId(productSportsEntity.getId());
             emp.setPrice(productSportsEntity.getPrice());
-            emp.setImage(productSportsEntity.getImage());
+            emp.setImage1(productSportsEntity.getImage1());
+            emp.setImage2(productSportsEntity.getImage2());
+            emp.setImage3(productSportsEntity.getImage3());
+            emp.setBrand(productSportsEntity.getBrand());
+            emp.setColor(productSportsEntity.getColor());
+            emp.setMaterial(productSportsEntity.getMaterial());
             emp.setReviews(productSportsEntity.getReviews());
 
             sportsItem.add(emp);
@@ -57,13 +62,18 @@ public class SportsServiceImp implements SportSerivce{
 
     @Override
     public String updateSport(Long id, SportsItem sportsItem) {
-        ProductSportsEntity exestingBookItem = sportslRepository.findById(id).get();
-        exestingBookItem.setTitle(sportsItem.getTitle());
-        exestingBookItem.setDescription(sportsItem.getDescription());
-        exestingBookItem.setPrice(sportsItem.getPrice());
-        exestingBookItem.setImage(sportsItem.getImage());
-        exestingBookItem.setReviews(sportsItem.getReviews());
-        sportslRepository.save(exestingBookItem);
+        ProductSportsEntity exestingSport = sportslRepository.findById(id).get();
+        exestingSport.setTitle(sportsItem.getTitle());
+        exestingSport.setDescription(sportsItem.getDescription());
+        exestingSport.setBrand(sportsItem.getBrand());
+        exestingSport.setColor(sportsItem.getColor());
+        exestingSport.setMaterial(sportsItem.getMaterial());
+        exestingSport.setImage1(sportsItem.getImage1());
+        exestingSport.setImage2(sportsItem.getImage2());
+        exestingSport.setImage3(sportsItem.getImage3());
+        exestingSport.setPrice(sportsItem.getPrice());
+        exestingSport.setReviews(sportsItem.getReviews());
+        sportslRepository.save(exestingSport);
         return "Update Succesfully";
     }
 

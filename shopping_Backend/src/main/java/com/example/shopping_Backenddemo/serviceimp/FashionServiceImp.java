@@ -57,13 +57,13 @@ public class FashionServiceImp implements FashionSerivce{
 
     @Override
     public String updateFashion(Long id, FashionItem fashionItem) {
-        ProductFashionEntity exestingBookItem = fashionlRepository.findById(id).get();
-        exestingBookItem.setTitle(fashionItem.getTitle());
-        exestingBookItem.setDescription(fashionItem.getDescription());
-        exestingBookItem.setPrice(fashionItem.getPrice());
-        exestingBookItem.setImage(fashionItem.getImage());
-        exestingBookItem.setReviews(fashionItem.getReviews());
-        fashionlRepository.save(exestingBookItem);
+        ProductFashionEntity exestingfashion = fashionlRepository.findById(id).get();
+        exestingfashion.setTitle(fashionItem.getTitle());
+        exestingfashion.setDescription(fashionItem.getDescription());
+        exestingfashion.setPrice(fashionItem.getPrice());
+        exestingfashion.setImage(fashionItem.getImage());
+        exestingfashion.setReviews(fashionItem.getReviews());
+        fashionlRepository.save(exestingfashion);
         return "Update Succesfully";
     }
 

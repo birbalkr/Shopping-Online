@@ -39,8 +39,13 @@ public class ComputerServiceImp implements ComputerSerivce{
             emp.setTitle(productComputerEntity.getTitle());
             emp.setDescription(productComputerEntity.getDescription());
             emp.setPrice(productComputerEntity.getPrice());
-            emp.setImage(productComputerEntity.getImage());
+            emp.setImage1(productComputerEntity.getImage1());
+            emp.setImage2(productComputerEntity.getImage2());
+            emp.setImage3(productComputerEntity.getImage3());
+            emp.setCpumodel(productComputerEntity.getCpumodel());
+            emp.setMemorystorage(productComputerEntity.getMemorystorage());
             emp.setReviews(productComputerEntity.getReviews());
+            emp.setOperation(productComputerEntity.getOperation());
 
             computerItem.add(emp);
         }
@@ -57,13 +62,18 @@ public class ComputerServiceImp implements ComputerSerivce{
     @Override
     public String updateComputer(Long id, ComputerItem computerItem) {
     
-        ProductComputerEntity exestingBookItem = computerRepository.findById(id).get();
-        exestingBookItem.setTitle(computerItem.getTitle());
-        exestingBookItem.setDescription(computerItem.getDescription());
-        exestingBookItem.setPrice(computerItem.getPrice());
-        exestingBookItem.setImage(computerItem.getImage());
-        exestingBookItem.setReviews(computerItem.getReviews());
-        computerRepository.save(exestingBookItem);
+        ProductComputerEntity exestingcomputer = computerRepository.findById(id).get();
+        exestingcomputer.setTitle(computerItem.getTitle());
+        exestingcomputer.setDescription(computerItem.getDescription());
+        exestingcomputer.setPrice(computerItem.getPrice());
+        exestingcomputer.setImage1(computerItem.getImage1());
+        exestingcomputer.setImage2(computerItem.getImage2());
+        exestingcomputer.setImage3(computerItem.getImage3());
+        exestingcomputer.setCpumodel(computerItem.getCpumodel());
+        exestingcomputer.setMemorystorage(computerItem.getMemorystorage());
+        exestingcomputer.setOperation(computerItem.getOperation());
+        exestingcomputer.setReviews(computerItem.getReviews());
+        computerRepository.save(exestingcomputer);
         return "Update Succesfully";
     }
 

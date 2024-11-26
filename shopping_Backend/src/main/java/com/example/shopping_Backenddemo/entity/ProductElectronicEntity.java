@@ -16,9 +16,14 @@ public class ProductElectronicEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    
     private String title;
     private String description;
     private String price;
-    private String image;
+    private String image1;
+    private String image2;
+    private String image3;
+    private String brand;
+    private String color;
     private String reviews;
 }

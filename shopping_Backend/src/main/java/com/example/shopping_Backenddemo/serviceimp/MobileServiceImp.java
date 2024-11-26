@@ -13,8 +13,8 @@ import com.example.shopping_Backenddemo.repository.MobileRepository;
 import com.example.shopping_Backenddemo.service.MobileSerivce;
 
 @Service
-public class MobileServiceImp implements MobileSerivce{
-    
+public class MobileServiceImp implements MobileSerivce {
+
     @Autowired
     private MobileRepository mobileRepository;
 
@@ -39,7 +39,14 @@ public class MobileServiceImp implements MobileSerivce{
             emp.setDescription(productMobilesEntity.getDescription());
             emp.setId(productMobilesEntity.getId());
             emp.setPrice(productMobilesEntity.getPrice());
-            emp.setImage(productMobilesEntity.getImage());
+            emp.setImage1(productMobilesEntity.getImage1());
+            emp.setImage2(productMobilesEntity.getImage2());
+            emp.setImage3(productMobilesEntity.getImage3());
+            emp.setBrand(productMobilesEntity.getBrand());
+            emp.setOpreatingSystem(productMobilesEntity.getOpreatingSystem());
+            emp.setRam(productMobilesEntity.getRam());
+            emp.setCupModel(productMobilesEntity.getCupModel());
+            emp.setCupSpeed(productMobilesEntity.getCupSpeed());
             emp.setReviews(productMobilesEntity.getReviews());
 
             mobileItem.add(emp);
@@ -56,13 +63,20 @@ public class MobileServiceImp implements MobileSerivce{
 
     @Override
     public String updateMobile(Long id, MobileItem mobileItem) {
-        ProductMobilesEntity exestingBookItem = mobileRepository.findById(id).get();
-        exestingBookItem.setTitle(mobileItem.getTitle());
-        exestingBookItem.setDescription(mobileItem.getDescription());
-        exestingBookItem.setPrice(mobileItem.getPrice());
-        exestingBookItem.setImage(mobileItem.getImage());
-        exestingBookItem.setReviews(mobileItem.getReviews());
-        mobileRepository.save(exestingBookItem);
+        ProductMobilesEntity exestingmobile = mobileRepository.findById(id).get();
+        exestingmobile.setTitle(mobileItem.getTitle());
+        exestingmobile.setDescription(mobileItem.getDescription());
+        exestingmobile.setId(mobileItem.getId());
+        exestingmobile.setPrice(mobileItem.getPrice());
+        exestingmobile.setImage1(mobileItem.getImage1());
+        exestingmobile.setImage2(mobileItem.getImage2());
+        exestingmobile.setImage3(mobileItem.getImage3());
+        exestingmobile.setBrand(mobileItem.getBrand());
+        exestingmobile.setOpreatingSystem(mobileItem.getOpreatingSystem());
+        exestingmobile.setRam(mobileItem.getRam());
+        exestingmobile.setCupModel(mobileItem.getCupModel());
+        exestingmobile.setCupSpeed(mobileItem.getCupSpeed());
+        exestingmobile.setReviews(mobileItem.getReviews());
         return "Update Succesfully";
     }
 
