@@ -31,9 +31,9 @@ export function Drawer() {
               ></button>
             </div>
             <div className="offcanvas-body">
-              <div>
-                <i class="fa-solid fa-circle-user"></i>
-                <Link to="">Hello, Sign in</Link>
+              <div className="m-3 ">
+                <i class="fa-solid fa-circle-user fa-2xl mt-3"></i>
+                <Link className="font-semibold text-2xl ml-3" to="">Hello, Sign in</Link>
               </div>
               <hr />
               <h5 className="text-2xl ml-8 mt-3 font-bold">Shop by Category</h5>
@@ -47,7 +47,7 @@ export function Drawer() {
                 </li>
 
                 <li className="my-2 mt-2 hover:bg-gray-100 text-xl cursor-pointer">
-                  <Link to="/modile">Mobile</Link>
+                  <Link to="/mobile">Mobile</Link>
                 </li>
 
                 <li className="my-2 mt-2 hover:bg-gray-100 text-xl cursor-pointerr">
@@ -77,7 +77,7 @@ export function Drawer() {
                 </li>
 
                 <li className="my-2 mt-2 hover:bg-gray-100 text-xl cursor-pointer">
-                  <Link to="/modile">Mobile Reacharges</Link>
+                  <Link to="/mobile">Mobile Reacharges</Link>
                 </li>
 
                 <li className="my-2 mt-2 hover:bg-gray-100 text-xl cursor-pointerr">
@@ -107,7 +107,7 @@ export function Drawer() {
                 </li>
 
                 <li className="my-2 mt-2 hover:bg-gray-100 text-xl cursor-pointer">
-                  <Link to="/modile">Sign in</Link>
+                  <Link to="/mobile">Sign in</Link>
                 </li>
               </ul>
             </div>
@@ -125,7 +125,7 @@ export function Drawer() {
             </li>
 
             <li className="ml-5">
-              <Link to="/modile">Mobile</Link>
+              <Link to="/mobile">Mobile</Link>
             </li>
 
             <li className="ml-5 liItem ">

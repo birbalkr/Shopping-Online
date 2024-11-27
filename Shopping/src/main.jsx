@@ -11,6 +11,8 @@ import Products_HomeKitchen from './components/Products data/Products_HomeKitche
 import Products_Mobile from './components/Products data/Products_Mobile.jsx';
 import ProuctsFashion from './components/Products data/Proucts_Fashion.jsx';
 import Product_sports from './components/Products data/product_sports.jsx';
+import SignIn from './components/Sign_In/SignIn.jsx';
+import SignUp from './components/Sign_Up/SignUp.jsx';
 const router = createBrowserRouter([
   {
     path:"/",
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
         element:<Products_HomeKitchen/>
       },
       {
-        path:"/modile",
+        path:"/mobile",
         element:<Products_Mobile/>
       },
       {
@@ -45,9 +47,16 @@ const router = createBrowserRouter([
         path:"/sport",
         element:<Product_sports/>
 
-      }
+      },
+      {
+        path:"/signin",
+        element:<SignIn/>
 
-     
+      },
+      {
+        path:"/signup",
+        element:<SignUp/>
+      }     
      
     ]
   }
