@@ -59,7 +59,7 @@ function SignIn() {
           login 
         </button>
         <li className="text-red-800">
-          Don't have an account?<Link className="text-blue-900" to ="signup" >  signup</Link>
+          Don't have an account?<Link className="text-blue-900" to ="/signup" >  signup</Link>
           </li>
       </form>
 

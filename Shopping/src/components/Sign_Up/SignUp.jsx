@@ -129,7 +129,7 @@ function SignUp() {
           SignUp
         </button>
         <li className="text-red-700">
-        you have your Acount <Link className="text-blue-800" to="signin" >login</Link>
+        you have your Acount <Link className="text-blue-800" to="/signin" >login</Link>
         </li>
       
        </form>
