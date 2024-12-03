@@ -69,7 +69,7 @@ export function Drawer() {
               </h5>
               <ul className="mt-3 ml-8">
                 <li className="my-2 mt-2 hover:bg-gray-100 text-xl cursor-pointer">
-                  <Link to="books">Online Pay</Link>
+                  <Link to="/onlinepay">Online Pay</Link>
                 </li>
 
                 <li className="my-2 mt-2 hover:bg-gray-100  text-xl cursor-pointer ">

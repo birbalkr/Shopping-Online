@@ -50,3 +50,18 @@ marquee{
         display: block;
     }
 }
+.Recharge{
+    border: 2px solid black;
+    height: 70px;
+    display: flex;
+    padding: 111px;
+    text-align:center;
+    justify-content:space-between;
+}
+.classNamebox{
+    border: 2px solid black;
+    height: 30px;
+    padding: 20px;
+   
+
+}

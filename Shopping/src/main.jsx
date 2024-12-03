@@ -13,6 +13,7 @@ import ProuctsFashion from "./components/Products data/Proucts_Fashion.jsx";
 import Product_sports from "./components/Products data/product_sports.jsx";
 import SignIn from "./components/Sign_In/SignIn.jsx";
 import SignUp from "./components/Sign_Up/SignUp.jsx";
+import Onlinepay from "./components/OnlinePay/Onlinepay.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <SignUp />,
       },
+      {
+        path:"/onlinepay",
+        element:<Onlinepay/>
+      }
     ],
   },
 ]);
