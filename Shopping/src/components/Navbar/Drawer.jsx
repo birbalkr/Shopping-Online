@@ -159,9 +159,9 @@ export function Drawer() {
           </ul>
         </div>
       </div>
-      <marquee behavior="">
+      {/* <marquee behavior="">
         This Is Shopping App Created by Birbal Kumar And Parbhakar Kumar
-      </marquee>
+      </marquee> */}
     </>
   );
 }
