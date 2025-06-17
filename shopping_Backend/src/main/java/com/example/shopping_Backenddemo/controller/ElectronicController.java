@@ -17,35 +17,32 @@ import com.example.shopping_Backenddemo.ElectronicItem;
 import com.example.shopping_Backenddemo.service.ElectronicSerivce;
 
 @RestController
-// @CrossOrigin("http://localhost:5173")
+@CrossOrigin("http://localhost:5173")
 public class ElectronicController {
 
     @Autowired
     ElectronicSerivce electronicSerivce;
 
-    @Value("${frontend.url}")
-    private String frontendUrl;
-
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @GetMapping("api/electronic")
     public List<ElectronicItem> getALLelectronic() {
         return electronicSerivce.readElectronics();
     }
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @GetMapping("api/electronic/{id}")
     public ElectronicItem readElectronic(@PathVariable Long id) {
         return electronicSerivce.readElectronic(id);
     }
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @PostMapping("add-electronic-api")
     public String createElectronic(@RequestBody ElectronicItem electronicItem) {
         return electronicSerivce.createElectronic(electronicItem);
 
     }
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @DeleteMapping("api/electronic/{id}")
     public String deleteElectronic(@PathVariable Long id) {
         if (electronicSerivce.deleteElectronic(id))
@@ -53,7 +50,7 @@ public class ElectronicController {
         return "Not found";
     }
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @PutMapping("add-electronic-api/{id}")
     public String updateElectronic(@PathVariable Long id, @RequestBody ElectronicItem electronicItem) {
         return electronicSerivce.updateElectronic(id, electronicItem);

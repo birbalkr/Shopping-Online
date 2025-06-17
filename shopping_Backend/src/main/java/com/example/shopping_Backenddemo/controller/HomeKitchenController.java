@@ -23,29 +23,27 @@ public class HomeKitchenController {
     @Autowired
     HomeKitchenSerivce homeKitchenSerivce;
 
-    @Value("${frontend.url}")
-    private String frontendUrl;
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @GetMapping("api/homekitchen")
     public List<HomeKitchenItem> getALLHomeKitchen() {
         return homeKitchenSerivce.readHomes();
     }
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @GetMapping("api/homekitchen/{id}")
     public HomeKitchenItem readHome(@PathVariable Long id) {
         return homeKitchenSerivce.readHome(id);
     }
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @PostMapping("add-homekitchen-api")
     public String createHome(@RequestBody HomeKitchenItem homeKitchenItem) {
         return homeKitchenSerivce.createHome(homeKitchenItem);
 
     }
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @DeleteMapping("api/homekitchen/{id}")
     public String deleteHome(@PathVariable Long id) {
         if (homeKitchenSerivce.deleteHome(id))
@@ -53,7 +51,7 @@ public class HomeKitchenController {
         return "Not found";
     }
 
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @PutMapping("add-homekitchen-api/{id}")
     public String updateHome(@PathVariable Long id, @RequestBody HomeKitchenItem homeKitchenItem) {
         return homeKitchenSerivce.updateHome(id, homeKitchenItem);

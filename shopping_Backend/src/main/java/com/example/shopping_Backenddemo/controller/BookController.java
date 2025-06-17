@@ -19,17 +19,13 @@ import com.example.shopping_Backenddemo.BookItem;
 import com.example.shopping_Backenddemo.service.BookSerivce;
 
 @RestController
-// @CrossOrigin("http://localhost:5173") // Allowing all routes under localhost:5173
+@CrossOrigin("http://localhost:5173") // Allowing all routes under localhost:5173
 public class BookController {
 
     @Autowired
     private BookSerivce bookSerivce;
 
-    // Get all books
-    @Value("${frontend.url}")
-    private String frontendUrl;
     
-    @CrossOrigin(origins = "${frontend.url}")
     @GetMapping("api/book")
     public ResponseEntity<List<BookItem>> getAllBooks() {
         List<BookItem> books = bookSerivce.readBooks();
@@ -37,7 +33,7 @@ public class BookController {
     }
 
     // Get a specific book by id
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @GetMapping("api/book/{id}")
     public ResponseEntity<BookItem> getBookById(@PathVariable Long id) {
         BookItem book = bookSerivce.readBook(id);
@@ -49,7 +45,7 @@ public class BookController {
     }
 
     // Create a new book
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @PostMapping("api/book")
     public ResponseEntity<String> createBook(@RequestBody BookItem bookItem) {
         String response = bookSerivce.createBook(bookItem);
@@ -57,7 +53,7 @@ public class BookController {
     }
 
     // Delete a book by id
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @DeleteMapping("api/book/{id}")
     public ResponseEntity<String> deleteBook(@PathVariable Long id) {
         boolean deleted = bookSerivce.deleteBook(id);
@@ -69,7 +65,7 @@ public class BookController {
     }
 
     // Update a book by id
-    @CrossOrigin(origins = "${frontend.url}")
+    
     @PutMapping("api/book/{id}")
     public ResponseEntity<String> updateBook(@PathVariable Long id, @RequestBody BookItem bookItem) {
         String response = bookSerivce.updateBook(id, bookItem);
